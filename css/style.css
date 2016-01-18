@@ -1,0 +1,247 @@
+html {
+
+}
+
+
+@font-face {
+    font-family: Code;
+    src:url(../fonts/fw_regular.otf);
+}
+
+
+
+body {
+
+
+ 
+
+}
+
+.Aboutme{
+font-family:Code !important;
+
+
+}
+
+.Aboutme p{
+font-size:210%;
+}
+
+
+.Aboutme h1{
+font-size:350%;
+}
+
+.Aboutme h2{
+font-size:210%;
+}
+
+
+
+
+.info {
+color:#ffffff;
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+
+}
+.bg-1 {
+
+background: #16222A; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #16222A , #3A6073); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #16222A , #3A6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+
+}
+
+
+.bg-2 {
+
+background-color:#F7F7F7;
+
+}
+.bg-3 {
+background-color:#1F1F21;
+ color: #ffffff;
+/*
+background: #606c88;
+background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b);
+background: linear-gradient(to left, #606c88 , #3f4c6b); 
+        
+  
+   */
+}
+
+.bg-4 {
+ background-color: #474e5d;
+       color: #ffffff;
+
+}
+
+.bg-5 {
+
+
+background: #4b6cb7; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+ color: #ffffff;
+}
+
+.bg-6 {
+background-image: url('../images/ebin.jpg');
+
+background-size:cover;
+			-webkit-transition: all .2s ease-in-out; /* For Safari 3.1 to 6.0 */
+    	transition: all .2s ease-in-out;
+}
+.glyphicon {
+    font-size: 50px;
+}
+
+.container-fluid {
+    
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+    }
+    
+    .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0px !important;
+      font-size: 12px;
+      letter-spacing: 5px;
+       color: #ffffff;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+.navbar-nav  a{
+   color: #ffffff !important;
+}
+.navbar-brand {
+  color: #ffffff !important;
+  
+}
+.center-block {float: none !important}
+
+
+
+
+footer  {
+ background-color: #1F1F21;
+padding-top: 30px;
+    padding-bottom: 30px;
+      color: #ffffff !important;
+}
+footer  a {
+
+ color: #ffffff !important;
+}
+
+/*
+#setit {
+ color: #ffffff !important;
+ 
+}
+*/
+.progress {
+height:1% !important;
+
+
+
+}
+
+#yx {
+padding-top: 10px !important;
+}
+#setit a {
+text-decoration: none;
+}
+#zimg,#yzimg{
+
+ box-shadow: 5px 5px 5px gray !important;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+  color:black !important
+}
+
+.btn.sharp {
+  border-radius:0;
+}
+.btn-primary.gradient:active, .btn-primary.gradient.active {
+    background: -moz-linear-gradient(top,  #267c99 50%, #007299 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#267c99), color-stop(50%,#007299)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #267c99 50%,#007299 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #267c99 50%,#007299 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #267c99 50%,#007299 50%); /* IE10+ */
+    background: linear-gradient(to bottom,  #267c99 50%,#007299 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267c99', endColorstr='#007299',GradientType=0 ); /* IE6-9 */
+}
+ 
+
+.modal-transparent {
+  background: transparent;
+}
+.modal-transparent .modal-content {
+  background: transparent;
+}
+.modal-backdrop.modal-backdrop-transparent {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-transparent.in {
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
+
+/* .modal-fullscreen */
+
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}
+
+
+}
+
+

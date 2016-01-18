@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400);
+
+$slate:        #31424c;
+$pink:         #ff5776;
+$gold:         #fcaf35;
+$blue:         #6ad0df;
+$white:        #fff;
+
+.slidein {
+  animation-name: slidein;
+  animation-duration: 700ms;
+}
+
+@keyframes slidein {
+  10% {
+    height: 70%;
+  }
+  25% {
+    height: 50%;
+  }
+  40% {
+    height: 90%;
+  }
+  55% {
+    height: 80%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: $slate;
+  font-family: 'yanone kaffeesatz', arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  letter-spacing: -.05em;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 33.33%;
+  height: 40%;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1em;
+  margin: 0;
+  padding: 0 .25em .15em 0;
+  border-left: solid 15px rgba($slate, .2);
+  color: $slate;
+  transition: all 300ms;
+
+  &:hover, &:focus {
+    @extend .slidein;
+    top: 0;
+    height: 100%;
+    background-color: $slate;
+    font-size: 5rem;
+  }
+
+  &:nth-of-type(1) {
+    background: $pink;
+  }
+  &:nth-of-type(2) {
+    background: $gold;
+  }
+  &:nth-of-type(3) {
+    background: $blue;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .flex-item {
+    padding: 0 .15em .05em 0;
+    border-left-width: 10px;
+
+    &:hover, &:active, &:focus {
+      font-size: 3rem;
+    }
+  }
+}
