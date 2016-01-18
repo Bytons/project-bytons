@@ -27,9 +27,6 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<!-- Laita kuntoon selaus ja lisää sisältö! -->
-<!-- lisää portfolioon materiaali ja mieti vielä värimaailmaa -->
-<!-- julkaise!! -->
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -293,16 +290,16 @@
  <h3>Poissa</h3>
  <br>
 <div class="btn-group">  
- <a  href="http://proto308.haaga-helia.fi/poissa/poissa?ryhmaid=poissa" class="btn btn-primary btn-lg sharp"  target="_blank role="button  >
-Live
-	</a> 
- 
-   
-      
- <button type="button" class="btn  btn-lg sharp btn-info" data-toggle="modal" data-target="#myModalx" data-local="#PoissaSlides">
-Offline
-	</button>
- 
+  
+    <button type="button" class="btn  btn-lg sharp btn-primary" button onclick="alert('Live version down currently due to network issues')" >
+        Live
+    </button>
+
+
+        <button type="button" class="btn  btn-lg sharp btn-info" data-toggle="modal" data-target="#myModalx" data-local="#PoissaSlides">
+            Offline
+        </button>
+
 </div>
 
             <br>
@@ -347,7 +344,7 @@ Exotic Cars
  <hr class="featurette-divider">
  
 
-      <div id="Contact" class="container-fluid">
+      <div id="Contact" class="container-fluid bg-3">
       
       <div class="container center-block">   
           <h2 class="featurette-heading">Contact me </h2>
@@ -529,7 +526,6 @@ Exotic Cars
       </footer>
       
    
-<!-- korjaa smooth scroll koska se ei toimi jos alempi close script on käytössä!!  
 <script>
  $(function() {
   $('a[href*=#]:not([href=#]) ').click(function() {
@@ -552,7 +548,7 @@ Exotic Cars
 
 			
 </script>
--->
+
      <script>
     $('.navbar-collapse').click('li', function() {
     $('.navbar-collapse').collapse('hide');
