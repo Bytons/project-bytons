@@ -12,7 +12,7 @@ html {
 
 body {
 
-
+    background-color:#F7F7F7;
  
 
 }
@@ -154,6 +154,27 @@ height:1% !important;
 
 }
 
+
+.iconogy {
+
+   
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.iconology:hover {
+    transform: scale(1.1);
+   -moz-box-shadow: 0 0 10px #ccc; 
+   -webkit-box-shadow: 0 0 10px #ccc; 
+   box-shadow: 0 0 10px #ccc; 
+}
+
+}
+
+
 #yx {
 padding-top: 10px !important;
 }
@@ -242,6 +263,11 @@ text-decoration: none;
 }
 
 
+/* hide and fade effect*/
+.hideme
+{
+    opacity:0;
+}
 }
 
 
