@@ -48,17 +48,17 @@
         <span class="icon-bar"></span>                        
       </button>
       
- <a class="navbar-brand" href="#"><p>  Home    </p> </a>
+ <a class="navbar-brand page-scroll" href="#"><p>  Home    </p> </a>
  
    
    
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#Aboutme">About me</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Skole">Education & Portfolio</a></li>
-         <li><a href="#Contact">Contact me</a></li>
+        <li><a class="page-scroll" href="#Aboutme">About me</a></li>
+        <li><a class="page-scroll" href="#Skills">Skills</a></li>
+        <li><a  class="page-scroll"href="#Skole">Education & Portfolio</a></li>
+         <li><a class="page-scroll" href="#Contact">Contact me</a></li>
         
       </ul>
     </div>
@@ -610,33 +610,21 @@
  
  
  <div class="container">
-        <p class="pull-right "><a href="#">Back to the top</a></p>
+        <p class="pull-right "><a class="page-scroll" href="#">Back to the top</a></p>
         <p class="">&copy; 2015 Antti Häkkinen.</p>
 
         </div>
       </footer>
-      
-   <!-- unfortunately not working as intended, fix it or scrap it
-<script>
- $(function() {
-  $('a[href*=#]:not([href=#]) ').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-      
-    }
-  });
-});
+   
+   
+   <script src="js/jquery.easing.min.js"></script>
 
-	
-</script>
-       -->
+ 
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+   
 
     <script>
         $(window).scroll(function () {
@@ -659,11 +647,7 @@
         });
 
     </script>
-     <script>
-    $('.navbar-collapse').click('li', function() {
-    $('.navbar-collapse').collapse('hide');
-        });
-</script>
+    
 
 
 </body>
